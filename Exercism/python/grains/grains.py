@@ -5,4 +5,4 @@ def square(number):
 
 
 def total():
-    return 2 ** 63
+    return 2 ** 64 - 1

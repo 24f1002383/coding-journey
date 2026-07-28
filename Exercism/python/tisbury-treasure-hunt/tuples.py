@@ -72,7 +72,7 @@ def clean_up(combined_record_group):
         (see HINTS.md for an example).
 
     """
-    
+
     report = ""
     for record in combined_record_group:
         report += f"{(record[0],record[2],record[3],record[4])}\n"

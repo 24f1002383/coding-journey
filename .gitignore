@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SQLite executables
+Exercism/sqlite/sqlite3.exe
+Exercism/sqlite/sqldiff.exe
+Exercism/sqlite/sqlite3_analyzer.exe
+Exercism/sqlite/sqlite3_rsync.exe
