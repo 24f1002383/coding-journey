@@ -7,15 +7,22 @@ def classify(number):
     if number <= 0:
         raise ValueError("Classification is only possible for positive integers.")
 
-    total = 0
+    if number == 1:
+        return "deficient"
 
-    for i in range(1, number):
+    total = 1  # 1 is a proper divisor of every number > 1
+
+    i = 2
+    while i * i <= number:
         if number % i == 0:
             total += i
+            if i != number // i:  # Avoid adding the square root twice
+                total += number // i
+        i += 1
 
     if total == number:
-        return 'perfect'
+        return "perfect"
     elif total > number:
-        return 'abundant'
+        return "abundant"
     else:
-        return 'deficient'
+        return "deficient"
