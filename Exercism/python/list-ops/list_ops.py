@@ -1,10 +1,10 @@
 def append(list1, list2):
     return list1 + list2
-
+# Concat lists
 def concat(lists):
     result = []
-    for l in lists:
-        result += l
+    for list in lists:
+        result += list
     return result
 
 def filter(function, list):
