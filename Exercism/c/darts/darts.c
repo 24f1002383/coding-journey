@@ -1,9 +1,9 @@
 #include "darts.h"
 
-uint8_t score(coordinate_t pos)
+uint8_t score(coordinate_t position)
 {
-    float distance = pos.x * pos.x +
-                     pos.y * pos.y;
+    float distance = position.x * position.x +
+                     position.y * position.y;
 
     if (distance <= 1.0F)
         return 10;
